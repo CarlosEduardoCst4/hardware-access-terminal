@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Hardware Access Terminal</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- FUNDO DIGITAL -->
+
+    <div class="codigo-fundo" id="codigoFundo"></div>
+
+    <!-- EFEITO DE SCANNER -->
+
+    <div class="scanner"></div>
+
+    <!-- TERMINAL PRINCIPAL -->
+
+    <main class="terminal">
+      <!-- CABEÇALHO -->
+
+      <header class="topo">
+        <div>
+          <h1>HARDWARE ACCESS TERMINAL</h1>
+
+          <p>SYSTEM MONITORING v4.0</p>
+        </div>
+
+        <div class="status">
+          <span class="ponto"></span>
+
+          SYSTEM ONLINE
+        </div>
+      </header>
+
+      <!-- CONTEÚDO -->
+
+      <section class="conteudo">
+        <!-- PAINEL DE MONITORAMENTO -->
+
+        <section class="painel">
+          <h2>HARDWARE SCANNER</h2>
+
+          <!-- CPU -->
+
+          <div class="componente">
+            <span>CPU</span>
+
+            <div class="barra">
+              <div class="progresso cpu"></div>
+            </div>
+
+            <span class="valor" id="cpuValor">78%</span>
+          </div>
+
+          <!-- RAM -->
+
+          <div class="componente">
+            <span>RAM</span>
+
+            <div class="barra">
+              <div class="progresso ram"></div>
+            </div>
+
+            <span class="valor" id="ramValor">62%</span>
+          </div>
+
+          <!-- GPU -->
+
+          <div class="componente">
+            <span>GPU</span>
+
+            <div class="barra">
+              <div class="progresso gpu"></div>
+            </div>
+
+            <span class="valor" id="gpuValor">74%</span>
+          </div>
+
+          <!-- SSD -->
+
+          <div class="componente">
+            <span>SSD</span>
+
+            <div class="barra">
+              <div class="progresso ssd"></div>
+            </div>
+
+            <span class="valor" id="ssdValor">42%</span>
+          </div>
+
+          <!-- TEMPERATURA -->
+
+          <div class="temperatura">
+            <span>CPU TEMP</span>
+
+            <strong id="temperatura">54°C</strong>
+          </div>
+
+          <div class="temperatura">
+            <span>GPU TEMP</span>
+
+            <strong id="temperaturaGpu">61°C</strong>
+          </div>
+        </section>
+
+        <!-- MAPA DE HARDWARE -->
+
+        <section class="hardware">
+          <h2>HARDWARE MAP</h2>
+
+          <div class="placa">
+            <div class="chip cpu-chip">CPU</div>
+
+            <div class="chip ram-chip">RAM</div>
+
+            <div class="chip gpu-chip">GPU</div>
+
+            <div class="chip ssd-chip">SSD</div>
+
+            <!-- LINHAS DA PLACA -->
+
+            <div class="linha linha1"></div>
+
+            <div class="linha linha2"></div>
+
+            <div class="linha linha3"></div>
+          </div>
+        </section>
+      </section>
+
+      <!-- TERMINAL -->
+
+      <section class="terminal-log">
+        <p>> INITIALIZING SYSTEM...</p>
+
+        <p>> CONNECTING TO HARDWARE...</p>
+
+        <p>> SCANNING HARDWARE...</p>
+      </section>
+
+      <!-- RODAPÉ -->
+
+      <footer>
+        <span> CPU >>> RAM >>> GPU >>> DISPLAY </span>
+
+        <span>
+          DATA TRANSFER: <strong id="dataTransfer">742 MB/s</strong>
+        </span>
+
+        <span> STATUS: ONLINE </span>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
