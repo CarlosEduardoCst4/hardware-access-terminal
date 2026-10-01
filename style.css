@@ -147,7 +147,7 @@ body {
 }
 
 .topo p {
-  color: #008f55;
+  color: #98b340;
 
   margin-top: 5px;
 }
@@ -167,9 +167,9 @@ body {
 
   border-radius: 50%;
 
-  background: #00ff88;
+  background: #ff0000;
 
-  box-shadow: 0 0 15px #00ff88;
+  box-shadow: 0 0 15px #d80202;
 
   animation: piscar 1s infinite;
 }
@@ -430,11 +430,11 @@ footer {
 
   justify-content: space-between;
 
-  border-top: 1px solid #005f39;
+  border-top: 1px solid #00a30e;
 
   padding-top: 10px;
 
-  color: #008f55;
+  color: #98b340;
 
   font-size: 13px;
 }

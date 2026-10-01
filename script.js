@@ -1,6 +1,4 @@
-/* =========================
-   ELEMENTOS
-========================= */
+/*ELEMENTOS*/
 
 const terminal = document.querySelector(".terminal-log");
 
@@ -24,9 +22,7 @@ const temperaturaGpu = document.querySelector("#temperaturaGpu");
 
 const dataTransfer = document.querySelector("#dataTransfer");
 
-/* =========================
-   MENSAGENS
-========================= */
+/*MENSAGENS*/
 
 const mensagens = [
   "INITIALIZING SYSTEM...",
@@ -52,9 +48,7 @@ const mensagens = [
 
 let linha = 0;
 
-/* =========================
-   GERAR CÓDIGO NO FUNDO
-========================= */
+/*GERAR CÓDIGO NO FUNDO*/
 
 const codigoFundo = document.querySelector("#codigoFundo");
 
@@ -80,17 +74,13 @@ function criarCodigo() {
 
 setInterval(criarCodigo, 150);
 
-/* =========================
-   GERAR NÚMERO ALEATÓRIO
-========================= */
+/*GERAR NÚMERO ALEATÓRIO*/
 
 function numeroAleatorio(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-/* =========================
-   ATUALIZAR HARDWARE
-========================= */
+/*ATUALIZAR HARDWARE*/
 
 function atualizarHardware() {
   // CPU
@@ -146,9 +136,7 @@ function atualizarHardware() {
 
 setInterval(atualizarHardware, 1000);
 
-/* =========================
-   SISTEMA DE DETECÇÃO
-========================= */
+/*SISTEMA DE DETECÇÃO*/
 
 function detectarComponente(mensagem) {
   if (mensagem === "CPU DETECTED") {
@@ -168,9 +156,7 @@ function detectarComponente(mensagem) {
   }
 }
 
-/* =========================
-   ESCREVER TERMINAL
-========================= */
+/*ESCREVER TERMINAL*/
 
 function escreverMensagem() {
   if (linha >= mensagens.length) {
@@ -194,9 +180,7 @@ function escreverMensagem() {
   setTimeout(escreverMensagem, 1200);
 }
 
-/* =========================
-   REINICIAR
-========================= */
+/*REINICIAR*/
 
 function reiniciarSistema() {
   terminal.innerHTML = "";
@@ -214,9 +198,7 @@ function reiniciarSistema() {
   escreverMensagem();
 }
 
-/* =========================
-   INICIAR
-========================= */
+/*INICIAR*/
 
 escreverMensagem();
 
